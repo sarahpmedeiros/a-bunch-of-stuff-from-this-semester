@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="Race <= 0.5\ngini = 0.3603\nsamples = 89096\nvalue = [21003, 68093]\nclass = Unskilled", fillcolor="#399de5b0"] ;
+1 [label="Gender <= 0.5\ngini = 0.2542\nsamples = 33794\nvalue = [5049, 28745]\nclass = Unskilled", fillcolor="#399de5d2"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Year <= 2011.0\ngini = 0.2764\nsamples = 16320\nvalue = [2703, 13617]\nclass = Unskilled", fillcolor="#399de5cc"] ;
+1 -> 2 ;
+3 [label="gini = 0.2664\nsamples = 7806\nvalue = [1235, 6571]\nclass = Unskilled", fillcolor="#399de5cf"] ;
+2 -> 3 ;
+4 [label="gini = 0.2854\nsamples = 8514\nvalue = [1468, 7046]\nclass = Unskilled", fillcolor="#399de5ca"] ;
+2 -> 4 ;
+5 [label="Year <= 2011.0\ngini = 0.2325\nsamples = 17474\nvalue = [2346, 15128]\nclass = Unskilled", fillcolor="#399de5d7"] ;
+1 -> 5 ;
+6 [label="gini = 0.2225\nsamples = 8110\nvalue = [1034, 7076]\nclass = Unskilled", fillcolor="#399de5da"] ;
+5 -> 6 ;
+7 [label="gini = 0.241\nsamples = 9364\nvalue = [1312, 8052]\nclass = Unskilled", fillcolor="#399de5d5"] ;
+5 -> 7 ;
+8 [label="Gender <= 0.5\ngini = 0.4105\nsamples = 55302\nvalue = [15954, 39348]\nclass = Unskilled", fillcolor="#399de598"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Year <= 2011.0\ngini = 0.448\nsamples = 28434\nvalue = [9630, 18804]\nclass = Unskilled", fillcolor="#399de57c"] ;
+8 -> 9 ;
+10 [label="gini = 0.4476\nsamples = 14503\nvalue = [4904, 9599]\nclass = Unskilled", fillcolor="#399de57d"] ;
+9 -> 10 ;
+11 [label="gini = 0.4483\nsamples = 13931\nvalue = [4726, 9205]\nclass = Unskilled", fillcolor="#399de57c"] ;
+9 -> 11 ;
+12 [label="Year <= 2011.0\ngini = 0.3599\nsamples = 26868\nvalue = [6324, 20544]\nclass = Unskilled", fillcolor="#399de5b1"] ;
+8 -> 12 ;
+13 [label="gini = 0.3468\nsamples = 13889\nvalue = [3100, 10789]\nclass = Unskilled", fillcolor="#399de5b6"] ;
+12 -> 13 ;
+14 [label="gini = 0.3734\nsamples = 12979\nvalue = [3224, 9755]\nclass = Unskilled", fillcolor="#399de5ab"] ;
+12 -> 14 ;
+}

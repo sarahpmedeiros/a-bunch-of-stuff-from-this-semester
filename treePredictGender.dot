@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="JobType <= 1.5\ngini = 0.4973\nsamples = 102876\nvalue = [55205, 47671]\nclass = Men", fillcolor="#e5813923"] ;
+1 [label="JobType <= 0.5\ngini = 0.4519\nsamples = 34783\nvalue = [22784, 11999]\nclass = Men", fillcolor="#e5813979"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Race <= 0.5\ngini = 0.4848\nsamples = 21003\nvalue = [12333, 8670]\nclass = Men", fillcolor="#e581394c"] ;
+1 -> 2 ;
+3 [label="gini = 0.4975\nsamples = 5049\nvalue = [2703, 2346]\nclass = Men", fillcolor="#e5813922"] ;
+2 -> 3 ;
+4 [label="gini = 0.4785\nsamples = 15954\nvalue = [9630, 6324]\nclass = Men", fillcolor="#e5813958"] ;
+2 -> 4 ;
+5 [label="Race <= 0.5\ngini = 0.3664\nsamples = 13780\nvalue = [10451, 3329]\nclass = Men", fillcolor="#e58139ae"] ;
+1 -> 5 ;
+6 [label="gini = 0.4027\nsamples = 5675\nvalue = [4089, 1586]\nclass = Men", fillcolor="#e581399c"] ;
+5 -> 6 ;
+7 [label="gini = 0.3376\nsamples = 8105\nvalue = [6362, 1743]\nclass = Men", fillcolor="#e58139b9"] ;
+5 -> 7 ;
+8 [label="Race <= 0.5\ngini = 0.4989\nsamples = 68093\nvalue = [32421, 35672]\nclass = Women", fillcolor="#399de517"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="gini = 0.4986\nsamples = 28745\nvalue = [13617, 15128]\nclass = Women", fillcolor="#399de519"] ;
+8 -> 9 ;
+10 [label="gini = 0.499\nsamples = 39348\nvalue = [18804, 20544]\nclass = Women", fillcolor="#399de516"] ;
+8 -> 10 ;
+}

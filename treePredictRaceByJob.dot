@@ -1,0 +1,12 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="JobType <= 0.5\ngini = 0.4734\nsamples = 102876\nvalue = [39579, 63297]\nclass = White", fillcolor="#399de560"] ;
+1 [label="gini = 0.3626\nsamples = 21008\nvalue = [4997, 16011]\nclass = White", fillcolor="#399de5af"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="JobType <= 1.5\ngini = 0.488\nsamples = 81868\nvalue = [34582, 47286]\nclass = White", fillcolor="#399de545"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.4672\nsamples = 44544\nvalue = [16569, 27975]\nclass = White", fillcolor="#399de568"] ;
+2 -> 3 ;
+4 [label="gini = 0.4994\nsamples = 37324\nvalue = [18013, 19311]\nclass = White", fillcolor="#399de511"] ;
+2 -> 4 ;
+}
